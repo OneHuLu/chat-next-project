@@ -1,7 +1,11 @@
-import CardComponent from "../Card/CardComponent";
+import CardComponent from "../AuthCard/AuthCardComponent";
 interface LoginProps {
   isLogin?: boolean;
 }
 export default function LoginComponent(props: LoginProps) {
-  return <CardComponent title="LoginComponent" towCardCahnge={props.isLogin} />;
+  return (
+    <CardComponent isChange={props.isLogin ?? false}>
+      <h1>Login</h1>
+    </CardComponent>
+  );
 }
