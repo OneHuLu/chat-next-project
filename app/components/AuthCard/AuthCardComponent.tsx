@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./authCard.module.css";
+import styles from "./authCard.module.scss";
 interface AuthCardSlotProps {
   children: React.ReactNode;
   isChange: boolean;

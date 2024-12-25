@@ -1,0 +1,32 @@
+.card {
+  position: absolute;
+  width: 90%;
+  max-width: 600px;
+  min-width: 260px;
+  height: 80%;
+  max-height: 400px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  text-align: center;
+  backface-visibility: hidden;
+
+  &.show {
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 2;
+  }
+
+  &.hide {
+    transform: translateY(100%);
+    opacity: 0;
+    z-index: 1;
+  }
+
+  &:hover {
+    box-shadow: 2px 3px 10px rgb(36, 35, 35);
+  }
+}
