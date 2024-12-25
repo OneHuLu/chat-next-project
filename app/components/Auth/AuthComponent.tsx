@@ -7,9 +7,9 @@ export default function AuthPage() {
   const [isLogin, setIsLogin] = useState(true);
 
   return (
-    <div className={styles.container} onClick={() => setIsLogin(!isLogin)}>
-      <LoginComponent isLogin={isLogin} />
-      <RegisterComponent isLogin={!isLogin} />
+    <div className={styles.container}>
+      <LoginComponent isLogin={isLogin} setLogin={setIsLogin} />
+      <RegisterComponent isLogin={!isLogin} setLogin={setIsLogin} />
     </div>
   );
 }
