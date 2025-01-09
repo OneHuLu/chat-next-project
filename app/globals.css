@@ -1,6 +1,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --hoverColor: #4096ff;
 }
 
 @media (prefers-color-scheme: dark) {

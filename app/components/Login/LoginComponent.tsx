@@ -12,15 +12,17 @@ export default function LoginComponent(props: LoginProps) {
         <h1>Login</h1>
         <Input placeholder="请输入邮箱" size="large" />
         <Input placeholder="请输入密码" size="large" />
-        <div className={styles.get_code}>
+        <div className={styles.flex_row_space}>
           <Input placeholder="请输入验证码" size="large" />
-          <Button size="large" className={styles.btn}>获取验证码</Button>
+          <Button size="large" className={styles.btn}>
+            获取验证码
+          </Button>
         </div>
-        <div>
-          尚未注册，前往
-          <span onClick={() => props.setLogin?.(false)}>
-            <i>注册</i>
+        <div className={styles.flex_row_space}>
+          <span onClick={() => props.setLogin?.(false)} className={styles.text}>
+            注册
           </span>
+          <span className={styles.text}>忘记密码</span>
         </div>
       </div>
     </AuthCardComponent>

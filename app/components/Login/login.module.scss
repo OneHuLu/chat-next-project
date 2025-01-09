@@ -6,14 +6,25 @@
   justify-content: space-around;
   align-items: center;
 
-  .get_code {
+  .flex_row_space {
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    .btn {
-        margin-left: 30px;
-    }
+  }
+
+  .btn {
+    margin-left: 30px;
+  }
+
+  .text {
+    cursor: pointer;
+    font-size: 18px;
+    color: #9e9e9e;
+  }
+  
+  .text:hover {
+    color: var(--hoverColor);
   }
 }
