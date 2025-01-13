@@ -1,6 +1,6 @@
-import { Button, Input } from "antd";
-import AuthCardComponent from "../AuthCard/AuthCardComponent";
-import styles from "./login.module.scss";
+import { Button, Input } from 'antd';
+import AuthCardComponent from '../AuthCard/AuthCardComponent';
+import styles from './login.module.scss';
 interface LoginProps {
   isLogin?: boolean;
   setLogin?: (isLogin: boolean) => void;

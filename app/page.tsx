@@ -1,6 +1,6 @@
-"use client";
-import styles from "./page.module.css";
-import AuthPage from "@/app/components/Auth/AuthComponent";
+'use client';
+import styles from './page.module.css';
+import AuthPage from '@/app/components/Auth/AuthComponent';
 export default function Home() {
   return (
     <div className={styles.page}>

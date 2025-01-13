@@ -1,7 +1,7 @@
-import { useState } from "react";
-import RegisterComponent from "../Register/RegisterComponent";
-import LoginComponent from "../Login/LoginComponent";
-import styles from "./auth.module.css";
+import { useState } from 'react';
+import RegisterComponent from '../Register/RegisterComponent';
+import LoginComponent from '../Login/LoginComponent';
+import styles from './auth.module.css';
 
 export default function AuthPage() {
   const [isLogin, setIsLogin] = useState(true);

@@ -1,4 +1,4 @@
-import AuthCardComponent from "../AuthCard/AuthCardComponent";
+import AuthCardComponent from '../AuthCard/AuthCardComponent';
 interface RegisterProps {
   isLogin?: boolean;
   setLogin?: (isLogin: boolean) => void;
